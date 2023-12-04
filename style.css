@@ -27,22 +27,34 @@ h2{
 }
 
 main{
+    width: fit-content;
     display: flex;
-    align-items: center;
     gap: 4rem;
     margin-right: 2rem;
 }
 
-ul{
-    width: 1000px;
+#planetlist{
+    width: fit-content;
     display: flex;
     justify-content: space-around;
     margin-top: 10rem;
     gap: 2rem;
     list-style: none;
 }
+/*#planetlist:nth-child(1){
+    background-color: orange;
+    width: 80vw;
+    height: 150vh;
+    border-radius: 50%;
+    transform: translateX(-400px);
+}
+#planetlist:nth-child(2){
+    border-radius: 50%;
+    height: 8px;
+    width: 14px
+}*/
 
-.planetButton{
+button{
     background-color: orange;
     width: 5rem;
     height: 5rem;
@@ -66,17 +78,11 @@ li{
 
 
 #ellipse1{
-    background-color: orange;
-    width: 80vw;
-    height: 150vh;
-    border-radius: 50%;
-    transform: translateX(-300px);
+
 }
 
 #ellipse2{
-    border-radius: 50%;
-    height: 8px;
-    width: 14px
+
 }
 
 #ellipse3{

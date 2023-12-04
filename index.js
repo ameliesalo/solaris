@@ -37,7 +37,7 @@ let planetList = document.getElementById('planetlist')
     button.addEventListener('click',()=> displayPlanetInfo(planet))
     listPlanet.textContent = planet.name
     listPlanet.append(button)
-    button.classList.add('planetButton')
+    button.classList.add(length = '0-9')
     planetList.append(listPlanet)
    });
 }
