@@ -38,6 +38,7 @@ let planetList = document.getElementById('planetlist')
     button.addEventListener('keydown', resetpage)
     listPlanet.textContent = planet.name
     listPlanet.append(button)
+    button.setAttribute('class', '0-9')
     planetList.append(listPlanet)
    });
 }
