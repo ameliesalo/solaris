@@ -36,9 +36,8 @@ main{
 #planetlist{
     width: fit-content;
     display: flex;
-    justify-content: space-around;
+    gap: 5rem;
     margin-top: 10rem;
-    gap: 2rem;
     list-style: none;
 }
 /*#planetlist:nth-child(1){
