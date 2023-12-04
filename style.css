@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 3rem;
+}
+
+h1{
+    color: aliceblue;
+}
+
+h2{
+    color: orange;
+    font-size: large;
+    letter-spacing: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style: none;
+}
+
+li{
+    color: orange;
+    display: flex;
+    flex-direction: column;
+}
+
+#planetinfo{
+    color: aliceblue;
+    display: flex;
+    margin: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 2rem;
+}
+
+#ellipse1{
+    background-color: orange;
+    width: 80vw;
+    height: 150vh;
+    border-radius: 50%;
+    transform: translateX(-300px);
+}
+
+#ellipse2{
+    background: rgba(136, 136, 136, 1);
+    border-radius: 50%;
+    height: 8px;
+    width: 14px
+}
+
+#ellipse3{
+    width: 26px;
+    height: 16px;
+    background: rgba(231, 205, 205, 1);
+    border-radius: 50%;
+}
+
+#ellipse4{
+    width: 28px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(66, 142, 212, 1);
+}
+
+#ellipse5{
+    width: 14px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(239, 95, 95, 1);
+}
+
+#ellipse6{
+    width: 188px;
+    height: 104px;
+    border-radius: 50%;
+    background: rgba(226, 148, 104, 1);
+}
+
+#ellipse7{
+    width: 144px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(199, 170, 114, 1);
+}
+#ellipse8{
+    width: 210px;
+    height: 5.5px;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateX(-130px);
+}
+
+#ellipse9{
+    width: 66px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(201, 212, 241, 1);
+}
+
+#ellipse10{
+    width: 66px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(122, 145, 167, 1);
+}
+
+.ellipse1{
+    width: 80vw;
+    height: 150vh;
+    border-radius: 50%;
+    transform: translateX(-300px);
+    background-color: rgb(65, 121, 232);
+}
