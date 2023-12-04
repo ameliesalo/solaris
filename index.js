@@ -35,6 +35,7 @@ let planetList = document.getElementById('planetlist')
     let listPlanet = document.createElement('li');
     let button = document.createElement('button');
     button.addEventListener('click',()=> displayPlanetInfo(planet))
+    button.addEventListener('keydown', resetpage)
     listPlanet.textContent = planet.name
     listPlanet.append(button)
     button.classList.add(length = '0-9')
@@ -47,11 +48,13 @@ function displayPlanetInfo(planet){
     planetInfo.innerHTML = `
     <h2>${planet.name}</h2>
     <p>description: ${planet.desc}</p>
-    <p>circumference: ${planet.circumference}</p>
-    <p>distance: ${planet.distance}</p>
-    <p>latin name: ${planet.latinName}</p>
-    <p>temperature day: ${planet.temp.day}
-    <p>temperature night: ${planet.temp.night}
+    <ul>
+    <li>circumference: ${planet.circumference}</li>
+    <li>distance: ${planet.distance}</li>
+    <li>latin name: ${planet.latinName}</li>
+    <li>temperature day: ${planet.temp.day}</li>
+    <li>temperature night: ${planet.temp.night}</li>
+    </ul>
     `
 }
 
@@ -60,6 +63,10 @@ async function startPage(){
     const apiKey = await getKey()
     planetInfo= await solarisBodies(apiKey)
     console.log(planetInfo)
+}
+
+const resetpage = () => {
+    location.reload()
 }
 
 startPage()
