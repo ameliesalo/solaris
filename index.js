@@ -34,10 +34,10 @@ let planetList = document.getElementById('planetlist')
    data.forEach((planet)=>{
     let listPlanet = document.createElement('li');
     let button = document.createElement('button');
-    button.textContent = 'getinfo'
     button.addEventListener('click',()=> displayPlanetInfo(planet))
     listPlanet.textContent = planet.name
     listPlanet.append(button)
+    button.classList.add('planetButton')
     planetList.append(listPlanet)
    });
 }

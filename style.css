@@ -6,6 +6,7 @@
 
 body{
     background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+    width: 1000px;
 }
 
 header{
@@ -25,11 +26,27 @@ h2{
     letter-spacing: 1rem;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 2rem;
+}
+
 ul{
+    width: 1000px;
     display: flex;
     justify-content: space-around;
+    margin-top: 10rem;
     gap: 2rem;
     list-style: none;
+}
+
+.planetButton{
+    background-color: orange;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
 }
 
 li{
@@ -46,12 +63,7 @@ li{
     align-items: center;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    margin-right: 2rem;
-}
+
 
 #ellipse1{
     background-color: orange;
@@ -62,7 +74,6 @@ main{
 }
 
 #ellipse2{
-    background: rgba(136, 136, 136, 1);
     border-radius: 50%;
     height: 8px;
     width: 14px
