@@ -48,7 +48,7 @@ function displayPlanetInfo(planet){
     <li>temperature night: ${planet.temp.night}</li>
     </ul>
     `
-}
+};
 
 //funktion som innehåller dvs funktioner som skall startas när start sidan öppnas
 async function startPage(){
@@ -56,7 +56,7 @@ async function startPage(){
     planetInfo= await solarisBodies(apiKey)
     console.log(planetInfo)
 }
-//funktion för att återställa startstidan vid tangent tryck efter visad info om planet
+//funktion för att återställa startstidan vid tangent tryck efter visad info
 const resetpage = () => {
     location.reload()
 }
